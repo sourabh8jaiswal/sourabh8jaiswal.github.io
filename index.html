@@ -162,6 +162,18 @@
     }
     .job:hover { border-color: var(--accent); transform: translateY(-2px); }
     .job-head { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 6px; margin-bottom: 4px; }
+    .job-title { display: flex; align-items: center; gap: 14px; }
+    .job-logo {
+      width: 48px; height: 48px;
+      flex-shrink: 0;
+      border-radius: 10px;
+      background: #fff;
+      border: 1px solid var(--border);
+      padding: 7px;
+      object-fit: contain;
+      display: block;
+    }
+    .job-logo.dark-logo { background: #0d1117; }
     .job-head h3 { font-size: 1.2rem; font-weight: 700; }
     .job-date { color: var(--accent-2); font-size: .88rem; font-weight: 500; white-space: nowrap; }
     .job-role { color: var(--text-dim); font-size: .95rem; margin-bottom: 16px; font-weight: 500; }
@@ -303,7 +315,10 @@
 
         <div class="job reveal">
           <div class="job-head">
-            <h3>SellerApp Development Center</h3>
+            <div class="job-title">
+              <img class="job-logo dark-logo" src="assets/sellerapp.svg" alt="SellerApp logo" />
+              <h3>SellerApp Development Center</h3>
+            </div>
             <span class="job-date mono">May 2023 – Present · Bangalore</span>
           </div>
           <p class="job-role">Software Engineer</p>
@@ -321,7 +336,10 @@
 
         <div class="job reveal">
           <div class="job-head">
-            <h3>Open Financial Technologies</h3>
+            <div class="job-title">
+              <img class="job-logo" src="assets/open.png" alt="Open Financial Technologies logo" />
+              <h3>Open Financial Technologies</h3>
+            </div>
             <span class="job-date mono">Jun 2022 – May 2023 · Bangalore</span>
           </div>
           <p class="job-role">Software Developer</p>
@@ -335,7 +353,10 @@
 
         <div class="job reveal">
           <div class="job-head">
-            <h3>Merkle Sokrati</h3>
+            <div class="job-title">
+              <img class="job-logo dark-logo" src="assets/merkle.svg" alt="Merkle logo" />
+              <h3>Merkle Sokrati</h3>
+            </div>
             <span class="job-date mono">Jun 2021 – Dec 2021 · Pune</span>
           </div>
           <p class="job-role">Associate Software Engineer</p>
